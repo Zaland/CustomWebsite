@@ -104,3 +104,8 @@ hr {
 .fade.in {
   opacity: 1;
 }
+
+/* Fix content moving issue */
+body{
+	overflow-y:scroll;
+}
