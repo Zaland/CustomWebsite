@@ -13,8 +13,8 @@
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
             <li id="home"><a href="index.php" class="animsition-link">Home</a></li>
-            <!--<li id="viewallgames"><a href="viewallgames.php" class="animsition-link">View All Games</a></li>
-            <li id="searchgame"><a href="#" class="animsition-link">Search Game</a></li>
+            <li id="viewallgames"><a href="viewallgames.php" class="animsition-link">View All Games</a></li>
+            <!--<li id="searchgame"><a href="#" class="animsition-link">Search Game</a></li>
             <li id="aboutus"><a href="#" class="animsition-link">About Us</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<b class="caret"></b></a>
