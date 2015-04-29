@@ -13,6 +13,9 @@
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
+    <!-- Custom JavaScript functions -->
+    <script type="text/javascript" src="js/search.js"></script>
+
     <!-- Load animsition -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/js/jquery.animsition.min.js"></script>
