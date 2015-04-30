@@ -32,7 +32,5 @@
         <hr>
       </div>
 
-      <div id="animsition-results" class="animsition">
-        <div id="results"></div>
-      </div>
+      <div id="results"></div>
     </div>

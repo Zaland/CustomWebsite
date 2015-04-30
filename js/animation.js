@@ -2,8 +2,8 @@
 $(document).ready(function() {
   $(".animsition").animsition({
 
-    inClass               :   'fade-in-up',
-    outClass              :   'fade-out-up',
+    inClass               :   'zoom-in',
+    outClass              :   'zoom-out',
     inDuration            :    1500,
     outDuration           :    800,
     linkElement           :   '.animsition-link',

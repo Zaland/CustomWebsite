@@ -1,8 +1,6 @@
 // clear the data on the screen
 function clearResults()
 {
-  // reset the value of animsition class and the results html data
-  $("#animsition-results").attr('class', 'animsition');
   $("#results").html('');
 }
 
@@ -23,12 +21,6 @@ function searchName()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      // reset the value of animsition class and the results html data
-      $("#animsition-results").attr('class', 'animsition');
-      $("#results").html('');
-
-      // set the animation
-      $("#animsition-results").addClass('fade-in-up');
       $("#results").html(xmlhttp.responseText);
     }
   }
@@ -53,12 +45,6 @@ function searchDeveloper()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      // reset the value of animsition class and the results html data
-      $("#animsition-results").attr('class', 'animsition');
-      $("#results").html('');
-
-      // set the animation
-      $("#animsition-results").className = 'animsition fade-in-up';
       $("#results").html(xmlhttp.responseText);
     }
   }
@@ -70,7 +56,7 @@ function searchDeveloper()
 function searchPublisher()
 {
   // store the value of input by user in a variable and reset its value on the webpage
-  var publisher = document.getElementById('searchPublisher').value;
+  var publisher = $("#searchPublisher").val();
   $('#searchPublisher').val('');
 
   // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -83,13 +69,7 @@ function searchPublisher()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      // reset the value of animsition class and the results html data
-      $("#animsition-results").attr('class', 'animsition');
-      $("#results").html('');
-      
-      // set the animation
-      document.getElementById("animsition-results").className = 'animsition fade-in-up';
-      document.getElementById("results").innerHTML = xmlhttp.responseText;
+      $("#results").html(xmlhttp.responseText);
     }
   }
   xmlhttp.open("GET","scripts/searchpublisher.php?q="+publisher,true);
