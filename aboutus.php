@@ -23,8 +23,8 @@
     include("scripts/navbar/navbar.php");
   }
 
-  // load the content for the search page
-  include("scripts/content/searchgames_content.php");
+  // load the content for the about us page
+  include("scripts/content/aboutus_content.php");
 
   // load the footer content
   include("scripts/content/footer.php");

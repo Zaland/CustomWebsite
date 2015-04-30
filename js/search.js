@@ -1,14 +1,16 @@
 // clear the data on the screen
 function clearResults()
 {
-  document.getElementById("results").innerHTML = '';
+  // reset the value of animsition class and the results html data
+  $("#animsition-results").attr('class', 'animsition');
+  $("#results").html('');
 }
 
 // searches the name and then includes it in the div "results"
 function searchName()
 {
   // store the value of input by user in a variable and reset its value on the webpage
-  var name = document.getElementById('searchName').value;
+  var name = $('#searchName').val();
   $('#searchName').val('');
 
   // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -21,7 +23,13 @@ function searchName()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      document.getElementById("results").innerHTML = xmlhttp.responseText;
+      // reset the value of animsition class and the results html data
+      $("#animsition-results").attr('class', 'animsition');
+      $("#results").html('');
+
+      // set the animation
+      $("#animsition-results").addClass('fade-in-up');
+      $("#results").html(xmlhttp.responseText);
     }
   }
   xmlhttp.open("GET","scripts/searchname.php?q="+name,true);
@@ -32,7 +40,7 @@ function searchName()
 function searchDeveloper()
 {
   // store the value of input by user in a variable and reset its value on the webpage
-  var developer = document.getElementById('searchDeveloper').value;
+  var developer = $('#searchDeveloper').val();
   $('#searchDeveloper').val('');
 
   // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -45,7 +53,13 @@ function searchDeveloper()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      document.getElementById("results").innerHTML = xmlhttp.responseText;
+      // reset the value of animsition class and the results html data
+      $("#animsition-results").attr('class', 'animsition');
+      $("#results").html('');
+
+      // set the animation
+      $("#animsition-results").className = 'animsition fade-in-up';
+      $("#results").html(xmlhttp.responseText);
     }
   }
   xmlhttp.open("GET","scripts/searchdeveloper.php?q="+developer,true);
@@ -69,6 +83,12 @@ function searchPublisher()
 
   xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      // reset the value of animsition class and the results html data
+      $("#animsition-results").attr('class', 'animsition');
+      $("#results").html('');
+      
+      // set the animation
+      document.getElementById("animsition-results").className = 'animsition fade-in-up';
       document.getElementById("results").innerHTML = xmlhttp.responseText;
     }
   }

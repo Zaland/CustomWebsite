@@ -32,7 +32,7 @@
         <hr>
       </div>
 
-      <div class="animsition-results">
+      <div id="animsition-results" class="animsition">
         <div id="results"></div>
       </div>
     </div>
