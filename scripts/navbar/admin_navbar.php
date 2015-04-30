@@ -19,8 +19,8 @@
           <li id="contactus"><a href="contactus.php" class="animsition-link">Contact Us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li id="register"><a href="register.php" class="animsition-link">Register</a></li>
-          <li id="login"><a href="login.php" class="animsition-link">Login</a></li>
+          <li><a href="#">Logged in as Admin</a></li>
+          <li><a href="scripts/logout.php">Log out</a></li>
         </ul>
       </div>
     </div>
