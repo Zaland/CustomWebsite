@@ -1,6 +1,7 @@
 
     <div class="container" style="padding-top:30px">
       <div class="col-lg-6 col-md-6 col-sm-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1">
+        <div id="register-alerts"></div>
         <font style="color:#1fa67b">
           <div class="jumbotron">
             <h4 align="center" style="color:#1fa67b; margin-top:-15px;"> Registration </h4>

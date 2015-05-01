@@ -22,8 +22,7 @@
 
     <!-- Custom JavaScript functions -->
     <script type="text/javascript" src="js/search.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/registration.js"></script>
 
     <!-- Load animsition -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css" rel="stylesheet">

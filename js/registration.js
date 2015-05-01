@@ -91,9 +91,9 @@ function checkPassword()
 }
 
 // check the username to see if its in use or not
-// the create_account script will return error messages if something went wrong
-// error code: 201 (username already taken)
-// 
+// the create_account script will return codes if it went well or something went wrong
+// code: 10 (everything went well)
+// code: 11 (username already taken)
 function checkUsername()
 {
   // send an AJAX request to the server and check if there exists a same username
@@ -110,23 +110,41 @@ function checkUsername()
     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 
   xmlhttp.onreadystatechange=function() {
-    // if everything went well, then print a success alert and reset the input forms
-    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      $("#username").val('');
-      $("#password1").val('');
-      $("#password2").val('');
+    // if everything went well, check the error code and then print an appropriate alert
+    if(xmlhttp.readyState==4 && xmlhttp.status==200) {
+      // grab the response that the php file sent
+      var temp = xmlhttp.responseText;
 
-      $(function(){
-        new PNotify({
-          text: 'Successfully created account',
-          type: 'success',
-          icon: false
+      // if the account was successfully created
+      if(temp == "10")
+      {
+        // reset the values that the user input
+        $("#username").val('');
+        $("#password1").val('');
+        $("#password2").val('');
+
+        // return a success alert
+        $(function(){
+          new PNotify({
+            text: 'Successfully created account',
+            type: 'success',
+            icon: false
+          });
         });
-      });
-    }
+      }
 
-    // error messages will be returned by the script
-    var error_message = xmlhttp.responseText;
+      // if a username is already taken, display an error alert
+      else if(temp == "11")
+      {
+        $(function(){
+          new PNotify({
+            text: 'Username already taken',
+            type: 'error',
+            icon: false
+          });
+        });
+      }
+    }
   }
   xmlhttp.open("GET", "scripts/create_account.php?u="+username+"&p="+password, true);
   xmlhttp.send();

@@ -24,7 +24,7 @@ function searchName()
       $("#results").html(xmlhttp.responseText);
     }
   }
-  xmlhttp.open("GET","scripts/searchname.php?q="+name,true);
+  xmlhttp.open("GET","scripts/search_name.php?q="+name,true);
   xmlhttp.send();
 }
 
@@ -48,7 +48,7 @@ function searchDeveloper()
       $("#results").html(xmlhttp.responseText);
     }
   }
-  xmlhttp.open("GET","scripts/searchdeveloper.php?q="+developer,true);
+  xmlhttp.open("GET","scripts/search_developer.php?q="+developer,true);
   xmlhttp.send();
 }
 
@@ -72,6 +72,6 @@ function searchPublisher()
       $("#results").html(xmlhttp.responseText);
     }
   }
-  xmlhttp.open("GET","scripts/searchpublisher.php?q="+publisher,true);
+  xmlhttp.open("GET","scripts/search_publisher.php?q="+publisher,true);
   xmlhttp.send();
 }

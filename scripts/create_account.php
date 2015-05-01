@@ -10,30 +10,26 @@
   $result = mysql_query("SELECT * FROM Accounts WHERE Username = '$user'") or die(mysql_error());
 
   // if username does not match, there will be no results
-  // therefore create the account and then return a successful alert
+  // therefore create the account and return error code 10
   if(mysql_num_rows($result) == 0)
   {
-    // insert the username and password into the database, the close the connection with the database
+    // insert the username and password into the database
     mysql_query("INSERT INTO `Accounts` (`ID`, `Username`, `Password`) VALUES (NULL, '$user', '$pass')") or die(mysql_error());
+
+    // close the database after inserting the account
     mysql_close($location);
 
-    // return a successful alert
-    echo "<div id='my_alert' class='alert fade in alert-success alert-dismissible' role='alert' align='center'>
-          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          <span aria-hidden='true'> &times; </span> </button>
-          Successfully created the account </div>";
+    // return a successful code
+    echo "10";
   }
 
-  // otherwise return an error message
+  // otherwise return the error code 11
   else
   {
-    // close the open database
+    // close the database that is already open
     mysql_close($location);
 
-    // return the error message
-    echo "<div id='my_alert' class='alert fade in alert-danger alert-dismissible' role='alert' align='center'>
-          <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          <span aria-hidden='true'> &times; </span> </button>
-          Username already taken </div>";
+    // return a error code
+    echo "11";
   }
 ?>
