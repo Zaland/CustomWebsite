@@ -16,9 +16,14 @@
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
+    <!-- PNotify custom notifications -->
+    <script type="text/javascript" src="js/pnotify.custom.min.js"></script>
+    <link href="css/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css">
+
     <!-- Custom JavaScript functions -->
     <script type="text/javascript" src="js/search.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
 
     <!-- Load animsition -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css" rel="stylesheet">
