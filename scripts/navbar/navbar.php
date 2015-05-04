@@ -16,12 +16,11 @@
             <li id="viewallgames"><a href="viewallgames.php" class="animsition-link">View All Games</a></li>
             <li id="searchgame"><a href="searchgames.php" class="animsition-link">Search Game</a></li>
             <li id="contactus"><a href="contactus.php" class="animsition-link">Contact Us</a></li>
-
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li id="register"><a href="register.php" class="animsition-link">Register</a></li>
-            <!--<li id="login"><a href="#">Login</a></li>
-          </ul>-->
+            <li id="login"><a href="login.php" class="animsition-link">Login</a></li>
+          </ul>
         </div>
       </div>
     </div>

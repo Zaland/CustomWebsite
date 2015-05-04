@@ -18,7 +18,7 @@ function showPasswordReg()
 }
 
 // check if all fields have data in them
-function checkFields()
+function checkFieldsReg()
 {
   // check if username is filled in by the user, if not return error message
   if($("#username").val() == '')
@@ -61,11 +61,11 @@ function checkFields()
 
   // otherwise check if the password fields match
   else
-    checkPassword();
+    checkPasswordReg();
 }
 
 // first perform a check on the passwords to see if they are identical
-function checkPassword()
+function checkPasswordReg()
 {
   // store the value of the two passwords in variables
   var pass1 = $("#password1").val();
@@ -74,7 +74,7 @@ function checkPassword()
   // if the passwords are the same, then check the username next
   if(pass1 === pass2)
   {
-    checkUsername();
+    checkUsernameReg();
   }
 
   // if the passwords don't match, then display an alert
@@ -94,7 +94,7 @@ function checkPassword()
 // the create_account script will return codes if it went well or something went wrong
 // code: 10 (everything went well)
 // code: 11 (username already taken)
-function checkUsername()
+function checkUsernameReg()
 {
   // send an AJAX request to the server and check if there exists a same username
   // also send the password, if there doesn't exist the same username then create the account

@@ -5,7 +5,7 @@
         <font style="color:#1fa67b">
           <div class="jumbotron">
             <h4 align="center" style="color:#1fa67b; margin-top:-15px;"> Registration </h4>
-            <form action="javascript:checkFields()" method="POST">
+            <form action="javascript:checkFieldsReg()" method="POST">
               <fieldset>
               <div class="form-group">
                 <label> Username </label>
