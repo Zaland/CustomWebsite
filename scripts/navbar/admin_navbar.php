@@ -14,8 +14,8 @@
           <ul class="nav navbar-nav">
             <li id="home"><a href="index.php" class="animsition-link">Home</a></li>
             <li id="viewallgames"><a href="viewallgames.php" class="animsition-link">View All Games</a></li>
-            <!--<li id="addgames"><a href="addgamepage.php" class="animsition-link">Add Game</a></li>
-            <li id="deletegames"><a href="deletegamepage.php" class="animsition-link">Delete Game</a></li>-->
+            <li id="addgames"><a href="addgames.php" class="animsition-link">Add Game</a></li>
+            <!--<li id="deletegames"><a href="deletegamepage.php" class="animsition-link">Delete Game</a></li>-->
             <li id="searchgame"><a href="searchgames.php" class="animsition-link">Search Game</a></li>
             <li id="contactus"><a href="contactus.php" class="animsition-link">Contact Us</a></li>
           </ul>

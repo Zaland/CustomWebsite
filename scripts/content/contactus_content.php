@@ -2,7 +2,7 @@
     <div class="container" style="padding-top:20px">
       <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
         <div class="jumbotron">
-          <h3 align="center" style="color:#1fa67b"> Contact Us </h3>
+          <h4 align="center" style="color:#1fa67b"> Contact Us </h3>
           <form action="javascript:checkContactForm();">
             <div class="form-group">
               <label for="name" style="color:#1fa67b"> Full Name </label>
