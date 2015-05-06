@@ -26,6 +26,7 @@
     <script type="text/javascript" src="js/contactus.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
     <script type="text/javascript" src="js/addgames.js"></script>
+    <script type="text/javascript" src="js/delete.js"></script>
 
     <!-- Load animsition -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.4.3/css/animsition.min.css" rel="stylesheet">
