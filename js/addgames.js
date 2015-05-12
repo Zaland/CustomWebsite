@@ -98,6 +98,12 @@ function checkEntry()
             icon: false
           });
         });
+
+        // clear the values already in input fields
+        $("#name").val('');
+        $("#developer").val('');
+        $("#publisher").val('');
+        $("#price").val('');
       }
 
       // if a username doesn't exist, diplay an error
